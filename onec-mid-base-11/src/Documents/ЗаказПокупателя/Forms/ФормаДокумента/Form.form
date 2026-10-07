@@ -176,6 +176,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Скидка</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>СкидкаПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>СкидкаРасширеннаяПодсказка</name>
             <id>173</id>
@@ -1644,6 +1648,11 @@
     <picture xsi:type="core:PictureRef">
       <picture>CommonPicture.МетаданныеПерерасчеты</picture>
     </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ПересчитатьТаблицу</name>
+      </handler>
+    </action>
     <representation>TextPicture</representation>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
